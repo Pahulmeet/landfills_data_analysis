@@ -83,16 +83,20 @@ ui <- dashboardPage(
   dashboardBody(
     tags$head(
       tags$style(HTML("
-      .main-sidebar {
-        width: 300px !important;
-      }
-      .main-header .logo {
-        width: 300px !important;
-      }
-      .content-wrapper, .main-footer, .right-side {
-        margin-left: 300px !important;
-      }
-    "))
+    .main-sidebar {
+      width: 300px !important;
+    }
+    .main-header .logo {
+      width: 300px !important;
+      white-space: normal;
+    }
+    .main-header .navbar {
+      margin-left: 300px !important;
+    }
+    .content-wrapper, .main-footer {
+      margin-left: 300px !important;
+    }
+  "))
     ),
     tabItems(
       # Overview tab
@@ -304,11 +308,22 @@ server <- function(input, output) {
   
   # Landfill table
   output$landfill_table <- renderDT({
-    landfills_clean %>%
-      select(landfill_name, state, city, county, project_type_category, current_project_status,
-             waste_in_place, ownership_type, mw_generation, emission_direct, emission_avoided) %>%
-      datatable(options = list(pageLength = 10))
+    datatable(
+      landfills_clean %>%
+        select(
+          landfill_name, state, city, county,
+          project_type_category, current_project_status,
+          waste_in_place, ownership_type,
+          mw_generation, emission_direct, emission_avoided
+        ),
+      options = list(
+        pageLength = 10,
+        scrollX = TRUE  # <-- THIS enables horizontal scrolling
+      ),
+      class = 'stripe hover nowrap'
+    )
   })
+  
   
   # VISUALIZATIONS
   
