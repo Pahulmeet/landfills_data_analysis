@@ -4,13 +4,6 @@
 
 This project is an interactive **R Shiny dashboard** designed to explore landfill data across the United States. The application analyzes patterns in waste disposal, renewable energy production, and landfill gas (LFG) emissions reduction. The project not only provides a detailed data exploration experience but also serves as a showcase of R programming skills in data cleaning, transformation, and interactive visualization.
 
-## 🔹 Dataset
-
-- **Source**: The data used in this project originates from a Kaggle notebook:
-  [Analysis of Landfills in America by Mehmet Isik](https://www.kaggle.com/code/mehmetisik/analysis-of-landfills-in-america/notebook)
-- **Note**: While the original code was written in Python, this dashboard was built from scratch in **R**.
-- **Corrections Made**: The original code contained mislabeled legends and minor inconsistencies, which have been corrected in this R-based implementation.
-
 ## 🚀 Purpose
 
 The goal of this project is to demonstrate proficiency in R and to build an intuitive, visually-rich, and informative dashboard using:
@@ -79,6 +72,13 @@ This project also reflects experience in real-world environmental datasets and i
 
 - `app.R` - Full source code for R Shiny dashboard
 - `landfill_data.csv` - Cleaned dataset used in the app (not included here)
+
+## 🔹 Dataset
+
+- **Source**: The data used in this project originates from a Kaggle notebook:
+  [Analysis of Landfills in America by Mehmet Isik](https://www.kaggle.com/code/mehmetisik/analysis-of-landfills-in-america/notebook)
+- **Note**: While the original code was written in Python, this dashboard was built from scratch in **R**.
+- **Corrections Made**: The original code contained mislabeled legends and minor inconsistencies, which have been corrected in this R-based implementation.
 
 ## 🚜 How to Run Locally
 
