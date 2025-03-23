@@ -37,25 +37,29 @@ This project also reflects experience in real-world environmental datasets and i
 ### 🌐 State Analysis
 
 - Landfills by state
-- Top 10 states by landfills and waste
 - Largest landfill in each state
+  ![state-landfills](images/largest_landfill_state.png)
+- Top 10 states by landfills and waste
+  ![state-waste](images/most_waste_states.png)
 - LFG collection averages
+  ![avg-lfg-state](images/avg_lfg_state.png)
 - State-wise ownership type breakdowns
-  ![Map](images/largest_landfill_state.png)
+  ![state-ownership](images/state_landfill_ownership_type.png)
 
 ### 🌆 City & County Analysis
 
 - Top 10 cities and counties by number of landfills
 - Top 10 cities and counties by waste volume
-  ![Map](images/counties_landfill_ownership.png)
+  ![counties-landfill-ownership](images/counties_landfill_ownership.png)
 
 ### 🏢 Ownership Analysis
 
 - Pie chart: public vs. private landfill share
+  ![pie-chart-ownership](images/pie_chart.png)
 - Avg. waste by ownership
 - Ownership breakdowns across top states, cities, and counties
 - Avg. LFG collected by ownership type
-
+  ![avg-lfg-ownership](images/avg_lfg_ownership.png)
 ### 🔬 Additional Insights
 
 - Top 10 landfills with the most active days (duration between project start and finish)
